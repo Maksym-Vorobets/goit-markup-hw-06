@@ -825,8 +825,8 @@ section {
     width: 768px;
   }
 
-  .solution-list-container {
-  }
+  /* .solution-list-container {
+  } */
 
   .solution-list {
     width: 100%;
@@ -843,7 +843,7 @@ section {
     text-align: left;
   }
 
-  /* Team ------------------------------------*/
+  /* Team */
 
   .team-list {
     width: 100%;
@@ -880,7 +880,7 @@ section {
     font-weight: 400;
   }
 
-  /* Team ---------------------------------*/
+  /* Team */
 
   .team {
     padding: 120px 0;
