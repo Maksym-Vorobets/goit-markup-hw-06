@@ -37,8 +37,8 @@ section {
   /* width: 1158px; */
   width: 320px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* padding: 0 15px; */
 }
 
@@ -243,6 +243,7 @@ section {
   padding-right: 16px; */
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 96px;
   /* gap: 24px; */
 }
 
@@ -279,8 +280,10 @@ section {
 
 .team {
   /* width: 1440px; */
-  padding: 120px 0;
+  /* padding: 120px 0; */
   background: #f4f4fd;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-header {
@@ -296,16 +299,25 @@ section {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .team-list-item {
   background-color: #fff;
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  width: 100%;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+/* .team-list-img {
+  align-items: center;
+  justify-content: center;
+} */
 
 .team-list-item-container {
   padding: 32px 0;
@@ -830,6 +842,19 @@ section {
   .solution-list-header {
     text-align: left;
   }
+
+  /* Team ------------------------------------*/
+
+  .team-list {
+    width: 100%;
+    gap: 64px 24px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -853,5 +878,20 @@ section {
   }
   .solution-list-text {
     font-weight: 400;
+  }
+
+  /* Team ---------------------------------*/
+
+  .team {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    gap: 24px;
+    padding: 0;
+  }
+
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
   }
 }
